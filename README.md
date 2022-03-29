@@ -1,9 +1,20 @@
 # se317project
-for a local dev environment, use the vscode dev container available in the repo, [setup for devocntainer is available at 'https://code.visualstudio.com/docs/remote/containers']
-from the vscode comand palette clone the repo into a container with the ```terminal Remote-containers: Clone Repository in Container Volume...```
-make sure to copy the .env.devcontainer file and rename as .env to setup the environment variables
-run the project in development with
-``` terminal yarn rw dev```
+for a local dev environment, use the vscode devcontainer available in the repo  
+  
+[setup for devcontainer is available at https://code.visualstudio.com/docs/remote/containers]  
+  
+from the vscode command palette clone the repo into a container with the following command: 
+  
+```terminal Remote-containers: Clone Repository in Container Volume...```
+  
+*make sure to copy the ```.env.devcontainer``` file and rename as ```.env``` to setup the environment variables*  
+  
+run the project in development with  
+  
+``` terminal
+yarn rw dev
+```
+  
 # Redwood
 ## Getting Started
 - [Tutorial](https://redwoodjs.com/docs/tutorial): getting started and complete overview guide.
