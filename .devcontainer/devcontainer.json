@@ -21,14 +21,15 @@
     "pflannery.vscode-versionlens",
     "editorconfig.editorconfig",
     "prisma.prisma",
-    "graphql.vscode-graphql"
+    "graphql.vscode-graphql",
+    "bradlc.vscode-tailwindcss"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [27017],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "yarn install",
+  //"postCreateCommand": ["yarn install"],
 
 	"features": {
 		"github-cli": "latest",
