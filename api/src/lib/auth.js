@@ -1,6 +1,6 @@
 import { AuthenticationError, ForbiddenError } from '@redwoodjs/graphql-server'
 import { db } from './db'
-
+import { logger } from 'src/lib/logger'
 /**
  * The session object sent in as the first argument to getCurrentUser() will
  * have a single key `id` containing the unique ID of the logged in user
@@ -19,6 +19,7 @@ import { db } from './db'
  * seen if someone were to open the Web Inspector in their browser.
  */
 export const getCurrentUser = async (session) => {
+  logger.info('session: ' + JSON.stringify(session))
   return await db.user.findUnique({
     where: { id: session.id },
     select: { id: true, username: true },

@@ -8,7 +8,11 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "0.50.0"
+    "@redwoodjs/core": "0.50.0",
+    "@vercel/nft": "^0.18.0",
+    "archiver": "^5.3.0",
+    "fs-extra": "^10.0.1",
+    "serverless": "^3.10.2"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
@@ -21,5 +25,10 @@
   "prisma": {
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.58.0",
+    "@aws-sdk/s3-request-presigner": "^3.58.0",
+    "aws-sdk": "^2.1106.0"
+  }
 }

@@ -17,4 +17,25 @@ model User {
   salt                String
   resetToken          String?
   resetTokenExpiresAt DateTime?
+  images              Image[]   @relation
+  tags                Tag[]     @relation
+}
+
+model Image {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdUser   User     @relation(fields: [createdUserId], references: [id])
+  createdUserId String   @db.ObjectId
+  tags          Tag[]    @relation(fields: [tagIDs], references: [id])
+  tagIDs        String[] @db.ObjectId
+}
+
+model Tag {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  name           String
+  taggedImages   Image[]  @relation(fields: [taggedImageIDs], references: [id])
+  taggedImageIDs String[] @db.ObjectId
+  tagUser        User     @relation(fields: [tagUserID], references: [id])
+  tagUserID      String   @db.ObjectId
+
+  @@unique([name, tagUserID])
 }

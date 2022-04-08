@@ -29,10 +29,11 @@
 	"forwardPorts": [27017],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-  //"postCreateCommand": ["yarn install"],
+  "postCreateCommand": "yarn install && mongosh --eval \"rs.initiate({_id: 'rs0', members: [{_id: 0, host: 'db:27017'}]});\"",
 
 	"features": {
 		"github-cli": "latest",
-		"aws-cli": "latest"
+		"aws-cli": "latest",
+    "terraform": "latest"
 	}
 }
