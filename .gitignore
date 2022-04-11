@@ -1,6 +1,7 @@
 .idea
 .DS_Store
 .env
+.env.production
 .netlify
 .redwood
 dev.db*
@@ -18,6 +19,13 @@ api/types/graphql.d.ts
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+
+# Deployment
+.serverless
+
+# Deployment
+.serverless
 
 
 # Deployment

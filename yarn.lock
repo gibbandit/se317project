@@ -5725,9 +5725,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@serverless/dashboard-plugin@npm:^6.2.0":
-  version: 6.2.0
-  resolution: "@serverless/dashboard-plugin@npm:6.2.0"
+"@serverless/dashboard-plugin@npm:^6.2.1":
+  version: 6.2.1
+  resolution: "@serverless/dashboard-plugin@npm:6.2.1"
   dependencies:
     "@serverless/event-mocks": ^1.1.1
     "@serverless/platform-client": ^4.3.2
@@ -5737,7 +5737,7 @@ __metadata:
     flat: ^5.0.2
     fs-extra: ^9.1.0
     js-yaml: ^4.1.0
-    jszip: ^3.7.1
+    jszip: ^3.8.0
     lodash: ^4.17.21
     memoizee: ^0.4.15
     ncjsm: ^4.3.0
@@ -5745,11 +5745,11 @@ __metadata:
     node-fetch: ^2.6.7
     open: ^7.4.2
     semver: ^7.3.5
-    simple-git: ^3.4.0
+    simple-git: ^3.5.0
     type: ^2.6.0
     uuid: ^8.3.2
     yamljs: ^0.3.0
-  checksum: 2564ac3e0ecc344079355e7813b2ba36ad203072c9c3b10b0997a95f234c25425b06205e8b88c4c1885967829fb4a474ad3a26e3a7ec8a33c00e00b45e603e04
+  checksum: 04fcd4b14e8ad43ece7d9fd049024b69c50f3b48177c0112a9cfed5026d42ab7d5472f139b237e2a4623b2a74c6257cae8fbe6c8de066e87f60bc40012d6e80c
   languageName: node
   linkType: hard
 
@@ -7798,9 +7798,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/nft@npm:^0.18.0":
-  version: 0.18.0
-  resolution: "@vercel/nft@npm:0.18.0"
+"@vercel/nft@npm:^0.18.1":
+  version: 0.18.1
+  resolution: "@vercel/nft@npm:0.18.1"
   dependencies:
     "@mapbox/node-pre-gyp": ^1.0.5
     acorn: ^8.6.0
@@ -7815,7 +7815,7 @@ __metadata:
     rollup-pluginutils: ^2.8.2
   bin:
     nft: out/cli.js
-  checksum: 4f52b3396eae9d822bac77b7e86bfe9cbf0168c2f52f0d6377214d4a1e7771485ccfdc3e6e2404fbcd95be86279fff58adf82e5bf52b2ade3c681c29c573daa0
+  checksum: 2bebc4b224d4f1a7d32d5f1b7f52c21e96936ddd006be4f31cd12717bc34dd9dc5b9cc04bfd1d4788308921ab1712803797610b1b1e570d8e14b235f8732e985
   languageName: node
   linkType: hard
 
@@ -8653,7 +8653,7 @@ __metadata:
   dependencies:
     "@redwoodjs/api": 0.50.0
     "@redwoodjs/graphql-server": 0.50.0
-    serverless: ^3.10.2
+    serverless: ^3.12.0
   languageName: unknown
   linkType: soft
 
@@ -9129,23 +9129,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1104.0, aws-sdk@npm:^2.942.0":
-  version: 2.1105.0
-  resolution: "aws-sdk@npm:2.1105.0"
-  dependencies:
-    buffer: 4.9.2
-    events: 1.1.1
-    ieee754: 1.1.13
-    jmespath: 0.16.0
-    querystring: 0.2.0
-    sax: 1.2.1
-    url: 0.10.3
-    uuid: 3.3.2
-    xml2js: 0.4.19
-  checksum: 6a1f281f62b1c21ae2218e42fa6f5df3cc380f2945ff2fdf7b1a7707393138ed835e39a3d9a0f24a4d33fe1c0aad9ad53ee3724a3e9091bfc67cf2f570134f7a
-  languageName: node
-  linkType: hard
-
 "aws-sdk@npm:^2.1106.0":
   version: 2.1106.0
   resolution: "aws-sdk@npm:2.1106.0"
@@ -9160,6 +9143,40 @@ __metadata:
     uuid: 3.3.2
     xml2js: 0.4.19
   checksum: 5eedced117095d7f1889686a1f6635bc18c67f02ab9043d693804bfd9b507037509a8517a013afcf0e3f9bf90747487574628992d1670bfb2ddb4d4dcf4f4925
+  languageName: node
+  linkType: hard
+
+"aws-sdk@npm:^2.1109.0":
+  version: 2.1111.0
+  resolution: "aws-sdk@npm:2.1111.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    uuid: 3.3.2
+    xml2js: 0.4.19
+  checksum: 6aadc0a06d030319b4c3074a54505435acb46fa092197a24df38f75fa3cd925c1874d069a9f9840e3c409da8eaf3f8154199977a2d673a9c4b291e7971ff2254
+  languageName: node
+  linkType: hard
+
+"aws-sdk@npm:^2.942.0":
+  version: 2.1105.0
+  resolution: "aws-sdk@npm:2.1105.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    uuid: 3.3.2
+    xml2js: 0.4.19
+  checksum: 6a1f281f62b1c21ae2218e42fa6f5df3cc380f2945ff2fdf7b1a7707393138ed835e39a3d9a0f24a4d33fe1c0aad9ad53ee3724a3e9091bfc67cf2f570134f7a
   languageName: node
   linkType: hard
 
@@ -15643,6 +15660,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"graceful-fs@npm:^4.2.10":
+  version: 4.2.10
+  resolution: "graceful-fs@npm:4.2.10"
+  checksum: 4223a833e38e1d0d2aea630c2433cfb94ddc07dfc11d511dbd6be1d16688c5be848acc31f9a5d0d0ddbfb56d2ee5a6ae0278aceeb0ca6a13f27e06b9956fb952
+  languageName: node
+  linkType: hard
+
 "graphlib@npm:^2.1.8":
   version: 2.1.8
   resolution: "graphlib@npm:2.1.8"
@@ -18296,15 +18320,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jszip@npm:^3.7.1":
-  version: 3.8.0
-  resolution: "jszip@npm:3.8.0"
+"jszip@npm:^3.8.0":
+  version: 3.9.1
+  resolution: "jszip@npm:3.9.1"
   dependencies:
     lie: ~3.3.0
     pako: ~1.0.2
     readable-stream: ~2.3.6
     set-immediate-shim: ~1.0.1
-  checksum: 340e2730d0afb745d928e33acef203aca311bd339cc951b01d2bd97aaafc2838e4730e8f904857c3243313ee22940b3027b6b54f0b941bbdaac4f303dfae4033
+  checksum: 581c6f115ae0e7cb5a2b6b22514cd8cd2d2a4417349d92b1d76b068982d60e1fb0c79dfeb8defc17900be20b0bc1d3855e19dd2dcdf3f93aaa425e084dd2efc3
   languageName: node
   linkType: hard
 
@@ -19052,6 +19076,13 @@ __metadata:
   dependencies:
     yallist: ^3.0.2
   checksum: 89b2ef2ef45f543011e38737b8a8622a2f8998cddf0e5437174ef8f1f70a8b9d14a918ab3e232cb3ba343b7abddffa667f0b59075b2b80e6b4d63c3de6127482
+  languageName: node
+  linkType: hard
+
+"lru-cache@npm:^7.4.0":
+  version: 7.8.0
+  resolution: "lru-cache@npm:7.8.0"
+  checksum: bb47bbcf04e4c84b9c13444b75c76360e348e49cd8d85e6b4d18a9dd5e248aeeb432f004b2ebee177a19f70ca09dd20f658a038b7a2bedc1e0b369f3540bd146
   languageName: node
   linkType: hard
 
@@ -23381,11 +23412,11 @@ __metadata:
     "@aws-sdk/client-s3": ^3.58.0
     "@aws-sdk/s3-request-presigner": ^3.58.0
     "@redwoodjs/core": 0.50.0
-    "@vercel/nft": ^0.18.0
+    "@vercel/nft": ^0.18.1
     archiver: ^5.3.0
     aws-sdk: ^2.1106.0
     fs-extra: ^10.0.1
-    serverless: ^3.10.2
+    serverless: ^3.12.0
   languageName: unknown
   linkType: soft
 
@@ -23718,6 +23749,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"semver@npm:^7.3.6":
+  version: 7.3.6
+  resolution: "semver@npm:7.3.6"
+  dependencies:
+    lru-cache: ^7.4.0
+  bin:
+    semver: bin/semver.js
+  checksum: 516b64434e95b0574c49e731a3936227ca03c93213f7b30030b63081d072d6a6bda04c6962dc7cf660c5acbaffefe0f4afe00a06d8e60f86144f2c0160a3a7a1
+  languageName: node
+  linkType: hard
+
 "send@npm:0.17.2, send@npm:^0.17.1":
   version: 0.17.2
   resolution: "send@npm:0.17.2"
@@ -23817,9 +23859,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless-lift@npm:^1.13.0":
-  version: 1.13.0
-  resolution: "serverless-lift@npm:1.13.0"
+"serverless-lift@npm:^1.14.0":
+  version: 1.14.0
+  resolution: "serverless-lift@npm:1.14.0"
   dependencies:
     "@aws-cdk/aws-apigatewayv2": ^1.138
     "@aws-cdk/aws-apigatewayv2-integrations": ^1.138
@@ -23851,21 +23893,21 @@ __metadata:
     toml: ^3.0.0
   peerDependencies:
     serverless: ^2.36.0 || ^3
-  checksum: 99a30d93ad5821b736041c3be233e02931ec867564454fe3dd72d5e4630caeba05252643bc45d0192c10807845a00facb968a7faef8c153aaaef1c0b514b88d8
+  checksum: 0e3d3526598e457f522455d3f250d3abc81d85cbd695e983699af2bb5a81953fcbda7a55c72869cbe250a64ae1a639ca0a89ec940e16a4453dd0e3d298530aab
   languageName: node
   linkType: hard
 
-"serverless@npm:^3.10.2":
-  version: 3.10.2
-  resolution: "serverless@npm:3.10.2"
+"serverless@npm:^3.12.0":
+  version: 3.12.0
+  resolution: "serverless@npm:3.12.0"
   dependencies:
-    "@serverless/dashboard-plugin": ^6.2.0
+    "@serverless/dashboard-plugin": ^6.2.1
     "@serverless/platform-client": ^4.3.2
     "@serverless/utils": ^6.0.3
     ajv: ^8.11.0
     ajv-formats: ^2.1.1
     archiver: ^5.3.0
-    aws-sdk: ^2.1104.0
+    aws-sdk: ^2.1109.0
     bluebird: ^3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.2
@@ -23885,7 +23927,7 @@ __metadata:
     get-stdin: ^8.0.0
     globby: ^11.1.0
     got: ^11.8.3
-    graceful-fs: ^4.2.9
+    graceful-fs: ^4.2.10
     https-proxy-agent: ^5.0.0
     is-docker: ^2.2.1
     js-yaml: ^4.1.0
@@ -23902,7 +23944,7 @@ __metadata:
     process-utils: ^4.0.0
     promise-queue: ^2.2.5
     require-from-string: ^2.0.2
-    semver: ^7.3.5
+    semver: ^7.3.6
     signal-exit: ^3.0.7
     strip-ansi: ^6.0.1
     supports-color: ^8.1.1
@@ -23915,7 +23957,7 @@ __metadata:
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: 5603ebbe0a1d0b2592b1f87dc3a7165f3c3e7f275cd4dfbb8ae1751c5d4f487701048c50a34c5fd1a4ed7529cae0ee88093cb0aad6ff6425f82e62308ce28cdf
+  checksum: 9132cdeb4ccecb6a4c7e1fd680ce4c7b75ea478cfd1904789e538c9ab16c6a9e24f943d23ad94d8b93e598ea47c4a70daf3c18c3de4168a9a8beb2c0cad17aaa
   languageName: node
   linkType: hard
 
@@ -24079,7 +24121,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-git@npm:^3.4.0":
+"simple-git@npm:^3.5.0":
   version: 3.5.0
   resolution: "simple-git@npm:3.5.0"
   dependencies:
@@ -26791,8 +26833,8 @@ __metadata:
     prop-types: 15.8.1
     react: 17.0.2
     react-dom: 17.0.2
-    serverless: ^3.10.2
-    serverless-lift: ^1.13.0
+    serverless: ^3.12.0
+    serverless-lift: ^1.14.0
     tailwindcss: ^3.0.23
   languageName: unknown
   linkType: soft

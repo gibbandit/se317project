@@ -14,6 +14,7 @@ import HomeHeaderLayout from 'src/layouts/HomeHeaderLayout'
 const Routes = () => {
   return (
     <Router>
+      <Route path="/image" page={ImagePage} name="image" />
       <Set wrap={TitleHeaderLayout}>
         <Route path="/" page={TitlePage} name="title" />
         <Route path="/login" page={LoginPage} name="login" />

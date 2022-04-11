@@ -7,6 +7,6 @@
     "@redwoodjs/graphql-server": "0.50.0"
   },
   "devDependencies": {
-    "serverless": "^3.10.2"
+    "serverless": "^3.12.0"
   }
 }

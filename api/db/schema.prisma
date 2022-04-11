@@ -1,16 +1,15 @@
 datasource db {
-  provider = "mongodb"
-  url      = env("MONGODB_DATABASE_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 generator client {
-  provider        = "prisma-client-js"
-  binaryTargets   = "native"
-  previewFeatures = ["mongoDb"]
+  provider      = "prisma-client-js"
+  binaryTargets = "native"
 }
 
 model User {
-  id                  String    @id @default(auto()) @map("_id") @db.ObjectId
+  id                  String    @id @default(uuid()) @db.Uuid
   name                String?
   username            String    @unique
   hashedPassword      String
@@ -22,20 +21,20 @@ model User {
 }
 
 model Image {
-  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  id            String   @id @default(uuid()) @db.Uuid
   createdUser   User     @relation(fields: [createdUserId], references: [id])
-  createdUserId String   @db.ObjectId
-  tags          Tag[]    @relation(fields: [tagIDs], references: [id])
-  tagIDs        String[] @db.ObjectId
+  createdUserId String   @db.Uuid
+  tags          Tag[]    @relation
+  tagIDs        String[] @db.Uuid
 }
 
 model Tag {
-  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  id             String   @id @default(uuid()) @db.Uuid
   name           String
-  taggedImages   Image[]  @relation(fields: [taggedImageIDs], references: [id])
-  taggedImageIDs String[] @db.ObjectId
+  taggedImages   Image[]  @relation
+  taggedImageIDs String[] @db.Uuid
   tagUser        User     @relation(fields: [tagUserID], references: [id])
-  tagUserID      String   @db.ObjectId
+  tagUserID      String   @db.Uuid
 
   @@unique([name, tagUserID])
 }
